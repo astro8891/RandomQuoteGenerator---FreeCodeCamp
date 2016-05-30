@@ -1,0 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+h1 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    margin-top: 4em;
+}
+
+.QuoteButton {
+    margin-top: 3em;
+}
