@@ -8,3 +8,8 @@ h1 {
 .QuoteButton {
     margin-top: 3em;
 }
+
+.QuoteText {
+    margin-top: 3em;
+    text-align: center;
+}
