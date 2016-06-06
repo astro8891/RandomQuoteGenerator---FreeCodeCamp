@@ -14,7 +14,13 @@ h1 {
     text-align: center;
 }
 
+.twitterButton {
+    margin-top: 3em;
+    text-align: center;
+}
+
 .twitter-share-button {
-	margin-top: 3em;
+    margin-top: 3em;
+    position: center;
     text-align: center;
 }
