@@ -1,10 +1,20 @@
 $(document).ready(function() {
-    console.log("ready!");
 
-    var quotes = ["Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away —Antoine de Saint-Exupéry", "You miss 100 percent of the shots you never take —Wayne Gretzky", "You must be the change you wish to see in the world —Gandhi", "When hungry, eat your rice; when tired, close your eyes. Fools may laugh at me, but wise men will know what I mean —Lin-Chi"]
+    var quotes = ["It's not about the content we are creating but how much content our customers are creating for us", "You miss 100 percent of the shots you never take",
+    "Flow is not just about what you hold on to; it is also about what you let go of.", "Unlearn your knowledge about what WAS working to understand what is working NOW",
+    "Its easier to start a global business than a local one, make your business one where you can work from anywhere in the world", "Think it, ink it: Do it, review it.",
+    "What you see is always what you get.", "Sustainable wealth follows a rhythm.", "You are the result of your choices.", "You settle for your standards.",
+    "Your well (of wealth) is in your words."]
+   
+    var button = document.getElementById('but');
+    
+    button.addEventListener('click', randomQuote);
 
-    $("QuoteButton").click(function() {
-        alert("Test");
-    });
-
+    function randomQuote(){
+    	var quote = document.getElementById("Quote");
+    	var random = Math.floor(Math.random() * quotes.length);
+    	quote.innerHTML = quotes[random];
+    	var twitterButton = document.getElementById("twitter")
+    	// twitterButton.innerHTML = quotes[random];
+    }    
 });
